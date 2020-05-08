@@ -22,6 +22,9 @@
     "semantic-ui-css": "^2.4.1",
     "simplewebrtc": "^3.0.2"
   },
+  "engines": {
+    "node": "12.16.2"
+  },
   "main": "server.js",
   "devDependencies": {},
   "bugs": {
