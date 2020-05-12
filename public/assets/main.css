@@ -7,6 +7,8 @@
     --submit_bg: #1FCC44;
     --submit_hover: #40e263;
     --icon_color: #6b6b6b;
+
+
 }
 
 * {
@@ -22,7 +24,11 @@ body {
     font-family: 'Roboto',
         sans-serif;
     /* create a linear gradient*/
-    background-image: linear-gradient(to right, var(--body_gradient_left), var(--body_gradient_right));
+    /*background-image: linear-gradient(to right, var(--body_gradient_left), var(--body_gradient_right));*/
+    background-image: linear-gradient(315deg, #C800C1 0%, #b91372 74%);
+    background-color: #6b0f1a;
+    /*background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);*/
+
     display: flex;
 }
 
@@ -43,6 +49,24 @@ body {
     padding: 5vh 15px;
 }
 
+#form_wrapper_1 {
+    width: 2000px;
+    height: 640px;
+    /* this will help us center it*/
+    margin: 30px 10px 10px 10px;
+    background-image: linear-gradient(to right, var(--body_gradient_right), var(--body_gradient_left));
+    /*background-color: var(--form_bg);*/
+    border-radius: 50px;
+    /* make it a grid container*/
+    display: grid;
+    /* with two columns of same width*/
+    grid-template-columns: 1fr 1fr;
+    /* with a small gap in between them*/
+    grid-gap: 5vw;
+    /* add some padding around */
+    padding: 5vh 15px;
+}
+
 #form_left {
     /* center the image */
     display: flex;
@@ -50,20 +74,53 @@ body {
     align-items: center;
 }
 
-#form_left img {
-    width: 350px;
-    height: 350px;
+#form_left_1 {
+    /* center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
 }
 
+#form_left img {
+    width: 400px;
+    height: 450px;
+    border-radius: 50px;
+}
+#form_left_1 img {
+    width: 700px;
+    height: 600px;
+    border-radius: 20px 40%;
+    opacity: 0.9;
+}
 #form_right {
     display: grid;
     /* single column layout */
     grid-template-columns: 1fr;
     /* have some gap in between elements*/
+    align-items: center;
     grid-gap: 20px;
     padding: 10% 5%;
 }
-
+#form_right_1 {
+    display: grid;
+    color:whitesmoke;
+    /* single column layout */
+    grid-template-columns: 1fr;
+    font: 20px Arial, sans-serif;
+    /* have some gap in between elements*/
+    align-items: center;
+    grid-gap: 5px;
+    padding: 10% 10% 10% 15%;
+}
+#form_right_1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    opacity: 0.9;
+    padding: 15%;
+}
 h1,
 span {
     text-align: center;
